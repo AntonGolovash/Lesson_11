@@ -27,6 +27,8 @@ int main()
 {
 	SmartPtr<User> userSmart (new User(1, "Bob"));
 	cout << userSmart->GetName() << endl;
+	(*userSmart).SetName("Alex");
+	cout << userSmart->GetName() << endl;
 	system("pause");
 	return 0;
 }
